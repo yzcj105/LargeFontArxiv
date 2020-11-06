@@ -16,6 +16,7 @@ NAME=${f%.tex}
 #sed -i '' '1,10s/11pt/12pt/g' $TEMP/$1/$NAME.tex
 sed -i '' '1,10s/twocolumn//g' $TEMP/$1/$NAME.tex
 sed -i '' '1,10s/preprint//g' $TEMP/$1/$NAME.tex
+sed -i '' '1,10s/reprint//g' $TEMP/$1/$NAME.tex
 sed -i '' '1,10s/10pt//g' $TEMP/$1/$NAME.tex
 sed -i '' '1,10s/11pt//g' $TEMP/$1/$NAME.tex
 sed -i '' '1,10s/documentclass\[/documentclass\[reprint,12pt,/g' $TEMP/$1/$NAME.tex
